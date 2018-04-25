@@ -1,0 +1,11 @@
+section.pst.notes { 
+    padding: 1.5rem; 
+    font-size: 12px;
+    position: sticky;
+     left: 0;
+     width:100vw;
+}
+
+section.pst.notes p { margin-bottom: 1rem; }
+
+section.pst.notes p:last-child { margin-bottom: 0; }

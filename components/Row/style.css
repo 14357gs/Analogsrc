@@ -1,0 +1,71 @@
+.table-container div.table-row { 
+    white-space: nowrap;
+    background-color: #fff; 
+    border-bottom: 1px solid #ccc; 
+    display: inline-flex;
+    min-width: 100%;
+}
+
+.table-container div.table-row > div { 
+    display: inline-block; 
+    padding: 8px;
+    vertical-align: middle;
+    white-space: normal;
+    flex: 1;
+}
+
+/* description */
+div.table-row div.s6 { max-width: 200px;}
+
+/* sticky columns */
+div.table-row div.sticky { 
+    background-color: #fff; 
+}
+
+div.table-row div.sticky:first-child div.content { width: 90px; }
+div.table-row div.sticky:nth-child( 2 ) div.content { width: 144px; }
+
+.parametric-search:not( .ie11 ) div.table-row div.sticky { 
+    position: sticky; 
+    left: 0;   
+}
+
+.parametric-search:not( .ie11 ) div.table-row div.sticky:nth-child( 2 ) { left: 90px; }
+
+div.table-row div.sticky div.content {     
+    height: calc( 100% - 1px );
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+div.table-row div.sticky:first-child div.content { justify-content: center; }
+
+div.ie11 div.table-row { margin-top: -4px; }
+
+div.ie11 div.table-row div.sticky { 
+    position: relative; 
+    padding: 0;
+}
+
+div.ie11 div.table-row div.sticky div.content { 
+    position: absolute; 
+    background-color: #fff;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+    height: 100%;
+    margin-top: 1px;
+}
+
+.new-label {
+    color: rgba(39, 179, 79, 1);
+    white-space: nowrap;
+}
+
+/* higlighted column */
+div.table-row.blue-row,
+div.table-row:hover,
+div.table-row:hover > div.sticky,
+div.blue-row > div.sticky,
+div.ie11 div.table-row:hover div.sticky div.content,
+div.ie11 div.blue-row div.sticky div.content { background-color: rgb( 242, 250, 252 ); }

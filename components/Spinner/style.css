@@ -1,0 +1,17 @@
+.white-out {
+    background-color: rgba( 256, 256, 256, .5 );
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body.ie11 .white-out { background-color: transparent; }
+
+.spinner-container {
+    position: fixed;
+    text-align: center;
+    left: calc( 50vw - 42.5px ); 
+    top: calc( 50vh - 36px );
+}

@@ -1,0 +1,83 @@
+.h-tool-bar {
+    background-color: rgba(30, 64, 86, 1);
+    padding: 10px 0 10px 30px;
+    text-align: left;
+    max-height: 50px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100vw;
+}
+
+.h-tool-bar.ie11 {
+    position: absolute;
+    left: 0;
+    top: 63px;
+}
+
+div.scrolling .h-tool-bar.ie11 {
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+}
+
+.h-bar-button {    
+    box-sizing: border-box;    
+    border-radius: 0;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.h-bar-button button {
+    border: none;
+}
+
+.h-bar-button a,
+.h-bar-button button {
+    color: #fff;
+    padding: 5.5px 12px;
+    display: inline-block;
+    background: linear-gradient( #1e4056,  #2f6283);
+    border-bottom: 1px #009fbd solid;
+    font-size: 13px;
+}
+
+.h-bar-button a:hover,
+.h-bar-button button:hover {
+    color:#fff;
+    background: linear-gradient( #2f6283, #1e4056 );
+    text-decoration: none;
+}
+
+.h-tool-bar .h-bar-button a:hover,
+.h-tool-bar .h-bar-button button:hover {
+    border-width: 3px;
+    padding-bottom: 4px;
+    box-shadow: 0 2px 5px rgba( 0, 0, 0, .5 );
+}
+
+.h-bar-button a:focus { 
+    text-decoration: none;
+    color:#fff; 
+}
+
+.h-bar-button.green a,
+.h-bar-button.green button { border-color: #27b34f; }
+
+.h-bar-button.orange a { 
+    border-color: #ff7200; 
+}
+
+.h-bar-button a img,
+.h-bar-button button img {
+    margin-left: 10px;
+    height: 15px;
+    width: 15px;
+    vertical-align: text-bottom;
+}
+
+.h-tool-bar .pipe {
+    color: #fff;
+    margin: 0 20px 0 0px;
+}

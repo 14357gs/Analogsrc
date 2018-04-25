@@ -1,0 +1,21 @@
+.sub-header {
+    border-bottom: 3px #000 solid;
+    overflow: hidden;
+    display: block;
+    padding-left: 1rem;
+    position: sticky;
+    left: 0;
+    width: 100vw;
+}
+
+.sub-header.ie11 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sub-header > h1 { 
+    font-size: 28px; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

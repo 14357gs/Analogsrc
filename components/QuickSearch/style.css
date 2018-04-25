@@ -1,0 +1,70 @@
+section.quick-search { 
+    background-color: rgb( 242, 242, 242 );
+    margin-bottom: 25px;
+    padding-top: 0;
+    position: sticky;
+    left: 0;
+    width: 100vw;
+}
+
+section.quick-search.ie11 {
+    position: absolute;
+    top: 64px;
+}
+
+section.quick-search img { display: inline !important; }
+
+section.quick-search > .row > .container {
+    margin: 0;
+    display: flex;
+    width: auto;
+	padding: 0;
+	border : 0;
+}
+
+section.quick-search .quick-filter-title {
+    background-color: rgba(30, 64, 86, 1);
+    color: #fff;
+    padding: 1rem 4rem;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+section.quick-search .quick-filter { flex: 10; }
+
+section.quick-search .quick-filter .errors {
+    padding: 6px 150px !important;
+}
+
+section.quick-search #qsform { max-width: 1170px; }
+
+section.quick-search .row-title { 
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+
+section.quick-search label { font-weight: normal; }
+
+section.quick-search .item-label,
+section.quick-search .form-submit { text-align: right; }
+
+section.quick-search button.btn.btn-primary { 
+    background-color: #009fbd;
+    box-shadow: none;
+    color: #fff;
+    border: none;
+}
+
+section.quick-search .errors {
+    color: #f00;
+    margin-bottom: 1rem;
+}
+
+/* patches */
+section.quick-search button.btn { 
+    margin: 0;
+}

@@ -1,0 +1,72 @@
+/* walkthrough styles */
+.joyride .joyride-tooltip {
+    border: 2px solid rgb(34, 143, 65);
+    padding: 0;
+    border-radius: 8px;
+}
+
+.joyride .joyride-tooltip__triangle-bottom { 
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236px%22%20height%3D%2218px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22rgb(34, 143, 65)%22%20transform%3D%22scale%282.25%29%20rotate%28180 8 4%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E") !important;
+}
+
+.joyride .joyride-tooltip.top .joyride-tooltip__triangle-top { 
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236px%22%20height%3D%2218px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22rgb(34, 143, 65)%22%20transform%3D%22scale%282.25%29%20rotate%280%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E") !important;
+    bottom: -18px !important;
+}
+
+.joyride .joyride-tooltip__triangle-left { 
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236px%22%20height%3D%2218px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22rgb(34, 143, 65)%22%20transform%3D%22scale%282.25%29%20rotate%28180 8 4%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E") !important;
+}
+
+.joyride .joyride-tooltip__triangle-right { 
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2218px%22%20height%3D%2236px%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C%200%208%2C%208%2016%2C0%22%20fill%3D%22rgb(34, 143, 65)%22%20transform%3D%22scale%282.25%29%20rotate%2890 4 4%29%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E") !important;
+}
+
+.joyride .joyride-tooltip__header {
+    background-color: rgb(37, 167, 74);
+    color: #fff;
+    padding: 15.4px;
+    font-family: Azbuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 3px;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.joyride .joyride-tooltip__main {
+    padding: 15.4px !important;
+    color: rgb( 101, 101, 101 );
+    font-size: 14px;
+}
+
+.joyride .joyride-tooltip__footer {
+    padding: 15.4px;
+    padding-top: 0;
+}
+
+.joyride .joyride-tooltip__button {
+    border-radius: 3px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12.3167px;
+    letter-spacing: 1.23333px;
+    text-transform: uppercase;
+    padding: 9.23333px 24.6333px;
+}
+
+.joyride .joyride-tooltip__button:hover { text-decoration: underline; }
+
+.joyride .joyride-tooltip__button--primary,
+.joyride .joyride-tooltip__button--primary:hover,
+.joyride .joyride-tooltip__button--primary:active,
+.joyride .joyride-tooltip__button--primary:focus { background-color: #009fbd; }
+
+.joyride .joyride-tooltip__button--secondary,
+.joyride .joyride-tooltip__button--secondary:hover,
+.joyride .joyride-tooltip__button--secondary:active,
+.joyride .joyride-tooltip__button--secondary:focus { 
+    background-color: rgb(238, 238, 238); 
+    color: rgb(136, 136, 136);
+}

@@ -1,0 +1,195 @@
+div#columns {
+    white-space: nowrap;
+    z-index: 1;
+    background-color: rgb(242, 242, 242);
+}
+
+.parametric-search:not( .ie11 ) div#columns {
+    width: auto;
+    min-width: 100vw;
+    display: inline-block; /* don't remove, seems unnecessary but won't expand the full width without this */
+    position: sticky;
+    top: 50px;
+}
+
+div#columns > form > div.column[id="0"] label { cursor: pointer; }
+
+
+div#columns > form > div.column {
+    padding: 5px !important;
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(242, 242, 242);
+    height: 273px;
+    border-right: 1px solid #ccc;
+    position: relative;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+div#columns > form > div.column.minimized,
+.minimized div#columns > form > div.column { height: 128px; }
+
+div#columns > form > div.sticky.column {
+    position: sticky;
+    z-index: 2;
+    left: 0;
+}
+
+div#columns > form > div.sticky.column:nth-child( 2 ){ left: 90px; }
+
+div#columns > form > div.column.modified { background-color: rgb( 242, 250, 252 ); }
+
+div#columns > form > div.column.drop-target:before {
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    top: 0;
+    content: '\e094';
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    text-shadow: 1px 1px #000;
+}
+
+div#columns > form > div.column.drop-target.right:before { 
+    right: -31px; 
+    background: linear-gradient( to right, rgba( 0, 0, 0, .8 ) , transparent );
+}
+
+div#columns > form > div.column.drop-target.left:before { 
+    left: -31px; 
+    background: linear-gradient( to right, transparent, rgba( 0, 0, 0, .8 ) );
+}
+
+div#columns > form > div.column div.header {
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+div#columns > form > div.column div.header.dragging {
+    cursor: move;
+    background-color: rgb(242, 242, 242);
+}
+
+div#columns > form > div.column div.header span {
+    font-weight: normal;
+    font-style: italic;
+    display: block;
+}
+
+/* part count */
+div#columns > form > div.column h3 {
+    position: absolute;
+    bottom: 0;
+    color: #1e4056;
+}
+
+div#columns > form > div.column:first-child { border-right: none; }
+
+div#columns > form > div.column:not( .text ) div.header { height: 68px; }
+
+div#columns > form > div.column div.sort-indicator {
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    text-align: center;
+}
+
+div#columns > form > div.column div.sort-indicator i { display: block; }
+
+/* checkboxes */
+div#columns > form > div.column .overflow-checkboxes {
+    max-height: 174px;
+    overflow-y: auto;
+}
+
+div#columns > form > div.column.minimized .overflow-checkboxes { max-height: 300px; }
+
+div#columns > form > div.column .overflow-checkboxes > label {
+    white-space: nowrap;
+    margin-bottom: 0;
+    font-weight: normal;
+    display: block;
+}
+
+div#columns > form > div.column.minimized.checkboxes .details {
+    white-space: nowrap;
+    height: 32px;
+    vertical-align: text-bottom;
+    line-height: 32px;;
+}
+
+div#columns > form > div.column.minimized.checkboxes .overflow-checkboxes { display: none; z-index: 9999; }
+
+div#columns > form > div.column.minimized.checkboxes > div:hover .overflow-checkboxes,
+div#columns > form > div.column.minimized.checkboxes .overflow-checkboxes:hover {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: .5rem;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 5px 5px -5px #333;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div#columns > form > div.column .overflow-checkboxes > hr { margin-bottom: 3px !important; }
+
+/* inputs */
+div#columns > form > div.column input[type="text"] { 
+    border: 1px solid #ccc; 
+    box-shadow: 1px 2px 2px rgba( 0, 0, 0, .15 ) inset;
+}
+
+div#columns > form > div.column.sliders input[type="text"] { max-width: 50px; }
+
+div#columns > form > div.column:not( .sliders ) input[type="text"] {
+    height: 35px;
+    display: block;
+    padding: 0 .5rem;
+}
+
+div#columns > form > div.column:nth-child( 2 ) input[type="text"] { width: 100px; }
+
+div#columns > form > div.column.text:not( .minimized ) > div:not( .header ):not( .sort-indicator ) { height: 219px; }
+
+div#columns > form > div.column.text.minimized > div:not( .header ):not( .sort-indicator ) { height: 77px; }
+
+/* buttons */
+button.hide-column {
+    font-size: 10px;
+    color: #333;
+    width: 50px;
+    display: block !important;
+    bottom: 5px;
+    left: 5px;
+    position: absolute;
+}
+
+/* ie11 fixes */
+div.ie11 div#columns {
+    top: 114px; /* height of the subheader and htoolbar */
+    position: absolute;
+    width: 100vw;
+}
+
+div.scrolling div.ie11 div#columns {
+    position: fixed;
+    top: 50px !important;
+    left: 0;
+    z-index: 4;
+}
+
+div.ie11 div#columns > form > div.sticky.column { position: absolute; }
+div.ie11 div#columns > form > div.sticky.column:nth-child( 2 ) + div.column { margin-left: 234px; }

@@ -1,0 +1,42 @@
+@import "./bootstrap.css";
+@import "./font-awesome.css";
+
+div#columns > form > div.column div.header {
+    background: transparent url( '../img/ControllerTH/icon-column-drag.png' ) no-repeat right top;
+    background-size: 8px auto;
+    padding-right: 10px;
+    line-height: 16px;
+}
+
+label.disabled { color: #ccc; }
+
+label.disabled input[type="checkbox"] { opacity: .3; }
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none !important;
+}
+
+tbody input[type="checkbox"] { border-color: #333; }
+
+input[type="checkbox"]:checked {
+    background: #009fbd url( '../img/icon-checkmark-white.png' ) no-repeat center center;
+    background-size: 11px 11px;
+    border: none;
+}
+
+input[type="text"]::placeholder {
+    color: black;
+    font-weight: normal;
+}
+
+input[type="text"] {
+    color:#000;
+}
+
+div.breadcrumb { background-color: #009fbd !important; }

@@ -1,0 +1,455 @@
+.parametric-search.ie11 {
+    margin-top: 114px;
+}
+
+.parametric-search.ie11 .table-container {     
+    margin-top: 390px;
+    overflow: visible;
+}
+
+.parametric-search.ie11.minimized .table-container {
+    margin-top: 247px; 
+}
+
+.parametric-search table { font-size: 13px; }
+
+.parametric-search hr {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.parametric-search button {
+    background: #fff;
+    border: 1px solid lightgray;
+    max-width: 86px;
+    margin: auto;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.parametric-search a {
+    color: #009fbd;
+    font-weight: 800;
+}
+
+/* default widths */
+div#columns > form > div.column:first-child,
+div.table-row div.sticky:first-child,
+.table > tbody > tr > td:first-child {
+    width: 90px;
+    max-width: 90px;
+    min-width: 90px;
+}
+
+div#columns > form > div.column:nth-child( 2 ),
+div.table-row div.sticky:nth-child( 2 ),
+.table > tbody > tr > td:nth-child( 2 ) {
+    width: 144px;
+    min-width: 144px;
+    max-width: 144px;
+}
+
+div#columns > form >div.column.sliders,
+div.table-row div.sliders,
+.table tbody tr td.sliders { 
+    max-width: 100px;
+    min-width: 100px; 
+}
+
+div#columns > form >div.column.sliders.minimized,
+.minimized div.table-row div.sliders,
+.minimized .table tbody tr td.sliders { 
+    max-width: 116px; 
+    min-width: 116px; 
+}
+
+div#columns > form >div.column.checkboxes,
+div.table-row div.checkboxes,
+.table tbody tr td.checkboxes { 
+    max-width: 120px;
+    min-width: 120px; 
+}
+
+div#columns > form >div.column.checkboxes.minimized,
+.minimized div.table-row div.checkboxes,
+.minimized .table tbody tr td.checkboxes { 
+    max-width: 160px; 
+    min-width: 160px; 
+}
+
+div#columns > form >div.column.textbox,
+div.table-row div.textbox,
+.table tbody tr td.textbox { 
+    max-width: 300px;
+    min-width: 300px; 
+}
+
+/* US Price */
+div#columns > form >div.column.sliders#s3,
+div.table-row div.sliders.s3, 
+div#columns > form >div.column.sliders#s2,
+div.table-row div.sliders.s2 {
+    max-width: 220px;
+    min-width: 220px;
+}
+
+/* packages */
+div#columns > form >div.column#s5.checkboxes,
+div.table-row div.s5.checkboxes,
+.table tbody tr td.s5.checkboxes { 
+    min-width: 430px; 
+    max-width: 430px;
+} 
+
+/* VOut Range */
+div#columns > form >div.column.checkboxes[id="3899"],
+div.table-row div.checkboxes[class~="3899"],
+.table tbody tr td.checkboxes[class~="3899"] { 
+    max-width: 320px;
+    min-width: 320px; 
+}
+
+/* input type */
+div#columns > form > div.column.checkboxes[id="4363"],
+div.table-row div.checkboxes[class~="4363"],
+.table tbody tr td.checkboxes[class~="4363"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* features */
+div#columns > form > div.column.checkboxes[id="4369"],
+div.table-row div.checkboxes[class~="4369"],
+.table tbody tr td.checkboxes[class~="4369"],
+div#columns > form > div.column.checkboxes[id="5012"],
+div.table-row div.checkboxes[class~="5012"],
+.table tbody tr td.checkboxes[class~="5012"],
+div#columns > form > div.column.checkboxes[id="4388"],
+div.table-row div.checkboxes[class~="4388"],
+.table tbody tr td.checkboxes[class~="4388"] { 
+    max-width: 240px;
+    min-width: 240px; 
+} 
+
+/* unusually large features */
+div#columns > form > div.column.checkboxes[id="5576"],
+div.table-row div.checkboxes[class~="5576"],
+.table tbody tr td.checkboxes[class~="5576"] { 
+    max-width: 350px;
+    min-width: 350px; 
+} 
+
+/* RF Primary Function */
+div#columns > form > div.column.checkboxes[id="4781"],
+div.table-row div.checkboxes[class~="4781"],
+.table tbody tr td.checkboxes[class~="4781"] { 
+    max-width: 300px;
+    min-width: 300px; 
+}
+
+/* Status */
+div#columns > form > div.column.checkboxes[id="s7"],
+div.table-row div.checkboxes[class~="s7"],
+.table tbody tr td.checkboxes[class~="s7"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* Architecture */
+div#columns > form > div.column.checkboxes[id="5056"],
+div.table-row div.checkboxes[class~="5056"],
+.table tbody tr td.checkboxes[class~="5056"],
+div#columns > form > div.column.checkboxes[id="5365"],
+div.table-row div.checkboxes[class~="5365"],
+.table tbody tr td.checkboxes[class~="5365"] { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Converter Primary Function */
+div#columns > form > div.column.checkboxes[id="4910"],
+div.table-row div.checkboxes[class~="4910"],
+.table tbody tr td.checkboxes[class~="4910"] { 
+    max-width: 160px;
+    min-width: 160px; 
+}
+
+/* Interface; Data Input */
+div#columns > form > div.column.checkboxes[id="4458"],
+div.table-row div.checkboxes[class~="4458"],
+.table tbody tr td.checkboxes[class~="4458"],
+div#columns > form > div.column.checkboxes[id="4391"],
+div.table-row div.checkboxes[class~="4391"],
+.table tbody tr td.checkboxes[class~="4391"]  { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Special Features */
+div#columns > form > div.column.checkboxes[id="4680"],
+div.table-row div.checkboxes[class~="4680"],
+.table tbody tr td.checkboxes[class~="4680"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* Output Voltage */
+div#columns > form > div.column.checkboxes[id="5417"],
+div.table-row div.checkboxes[class~="5417"],
+.table tbody tr td.checkboxes[class~="5417"] { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Device Primary Function */
+div#columns > form > div.column.checkboxes[id="4666"],
+div.table-row div.checkboxes[class~="4666"],
+.table tbody tr td.checkboxes[class~="4666"] { 
+    max-width: 220px;
+    min-width: 220px; 
+}
+
+/* Gain Set */
+div#columns > form > div.column.checkboxes[id="4359"],
+div.table-row div.checkboxes[class~="4359"],
+.table tbody tr td.checkboxes[class~="4359"] { 
+    max-width: 160px;
+    min-width: 160px; 
+}
+
+/* Amp Features; Amp Architecture */
+div#columns > form > div.column.checkboxes[id="5057"],
+div.table-row div.checkboxes[class~="5057"],
+.table tbody tr td.checkboxes[class~="5057"],
+div#columns > form > div.column.checkboxes[id="5134"],
+div.table-row div.checkboxes[class~="5134"],
+.table tbody tr td.checkboxes[class~="5134"] { 
+    max-width: 160px;
+    min-width: 160px; 
+}
+
+/* Measurements Available */
+div#columns > form > div.column.checkboxes[id="4691"],
+div.table-row div.checkboxes[class~="4691"],
+.table tbody tr td.checkboxes[class~="4691"] { 
+    max-width: 300px;
+    min-width: 300px; 
+}
+
+/* Processor Product Family */
+div#columns > form > div.column.checkboxes[id="4870"],
+div.table-row div.checkboxes[class~="4870"],
+.table tbody tr td.checkboxes[class~="4870"] { 
+    max-width: 160px;
+    min-width: 160px; 
+}
+
+/* Memory Supported External */
+div#columns > form > div.column.checkboxes[id="3927"],
+div.table-row div.checkboxes[class~="3927"],
+.table tbody tr td.checkboxes[class~="3927"] { 
+    max-width: 220px;
+    min-width: 220px; 
+}
+
+/* Interface Protocol */
+div#columns > form > div.column.checkboxes[id="4583"],
+div.table-row div.checkboxes[class~="4583"],
+.table tbody tr td.checkboxes[class~="4583"] { 
+    max-width: 220px;
+    min-width: 220px; 
+}
+
+/* Interpolation Factor */
+div#columns > form > div.column.checkboxes[id="4953"],
+div.table-row div.checkboxes[class~="4953"],
+.table tbody tr td.checkboxes[class~="4953"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* Nominal Resistor Values */
+div#columns > form > div.column.checkboxes[id="4516"],
+div.table-row div.checkboxes[class~="4516"],
+.table tbody tr td.checkboxes[class~="4516"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* Device Sensors */
+div#columns > form > div.column.checkboxes[id="4770"],
+div.table-row div.checkboxes[class~="4770"],
+.table tbody tr td.checkboxes[class~="4770"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* Nominal Resistor Values */
+div#columns > form > div.column.checkboxes[id="4516"],
+div.table-row div.checkboxes[class~="4516"],
+.table tbody tr td.checkboxes[class~="4516"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* RF Features */
+div#columns > form > div.column.checkboxes[id="4862"],
+div.table-row div.checkboxes[class~="4862"],
+.table tbody tr td.checkboxes[class~="4862"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* FOM-Normalized Band... */
+div#columns > form > div.column.sliders[id="5130"],
+div.table-row div.sliders[class~="5130"],
+.table tbody tr td.sliders[class~="5130"] { 
+    max-width: 130px;
+    min-width: 130px; 
+}
+
+/* FOM-Normalized Band...; PN Open Loop...*/
+div#columns > form > div.column.sliders[id="5129"],
+div.table-row div.sliders[class~="5129"],
+.table tbody tr td.sliders[class~="5129"],
+div#columns > form > div.column.sliders[id="5131"],
+div.table-row div.sliders[class~="5131"],
+.table tbody tr td.sliders[class~="5131"] { 
+    max-width: 140px;
+    min-width: 140px; 
+}
+
+/* External I/O Supply Voltage */
+div#columns > form > div.column.checkboxes[id="3924"],
+div.table-row div.checkboxes[class~="3924"],
+.table tbody tr td.checkboxes[class~="3924"] { 
+    max-width: 160px;
+    min-width: 160px; 
+}
+
+/* Output Logic */
+div#columns > form > div.column.checkboxes[id="4482"],
+div.table-row div.checkboxes[class~="4482"],
+.table tbody tr td.checkboxes[class~="4482"] { 
+    max-width: 160px;
+    min-width: 160px; 
+}
+
+/* Vin Range */
+div#columns > form > div.column.checkboxes[id="5472"],
+div.table-row div.checkboxes[class~="5472"],
+.table tbody tr td.checkboxes[class~="5472"] { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Switch Special Features */
+div#columns > form > div.column.checkboxes[id="4815"],
+div.table-row div.checkboxes[class~="4815"],
+.table tbody tr td.checkboxes[class~="4815"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* Package Height; Package Area */
+div#columns > form > div.column.sliders[id="s16"],
+div.table-row div.sliders[class~="s16"],
+.table tbody tr td.sliders[class~="s16"],
+div#columns > form > div.column.sliders[id="s17"],
+div.table-row div.sliders[class~="s17"],
+.table tbody tr td.sliders[class~="s17"] { 
+    max-width: 220px;
+    min-width: 220px; 
+}
+
+/* Battery Chemistry */
+div#columns > form > div.column.checkboxes[id="5380"],
+div.table-row div.checkboxes[class~="5380"],
+.table tbody tr td.checkboxes[class~="5380"] { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Topology */
+div#columns > form > div.column.checkboxes[id="5362"],
+div.table-row div.checkboxes[class~="5362"],
+.table tbody tr td.checkboxes[class~="5362"] { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Function */
+div#columns > form > div.column.checkboxes[id="5577"],
+div.table-row div.checkboxes[class~="5577"],
+.table tbody tr td.checkboxes[class~="5577"] { 
+    max-width: 250px;
+    min-width: 250px; 
+}
+
+/* Number of Cells */
+div#columns > form > div.column.checkboxes[id="5379"],
+div.table-row div.checkboxes[class~="5379"],
+.table tbody tr td.checkboxes[class~="5379"] { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Dimming */
+div#columns > form > div.column.checkboxes[id="5383"],
+div.table-row div.checkboxes[class~="5383"],
+.table tbody tr td.checkboxes[class~="5383"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* Gain */
+div#columns > form > div.column.checkboxes[id="5446"],
+div.table-row div.checkboxes[class~="5446"],
+.table tbody tr td.checkboxes[class~="5446"] { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Float Voltage */
+div#columns > form > div.column.checkboxes[id="5381"],
+div.table-row div.checkboxes[class~="5381"],
+.table tbody tr td.checkboxes[class~="5381"] { 
+    max-width: 200px;
+    min-width: 200px; 
+}
+
+/* Theta JA */
+div#columns > form > div.column.checkboxes[id="5341"],
+div.table-row div.checkboxes[class~="5341"],
+.table tbody tr td.checkboxes[class~="5341"] { 
+    max-width: 240px;
+    min-width: 240px; 
+}
+
+/* Frequency Ranges */
+div#columns > form > div.column.checkboxes[id="4422"],
+div.table-row div.checkboxes[class~="4422"],
+.table tbody tr td.checkboxes[class~="4422"] { 
+    max-width: 300px;
+    min-width: 300px; 
+}
+
+/* MultiProtocol Data Rate */
+div#columns > form > div.column.checkboxes[id="5539"],
+div.table-row div.checkboxes[class~="5539"],
+.table tbody tr td.checkboxes[class~="5539"] { 
+    max-width: 220px;
+    min-width: 220px; 
+}
+
+.no-results {
+    text-align: center;
+    font-style: italic;
+    margin-top: 1rem;
+    max-width: 100vw;
+}
+
+/* ensure the form doesn't inherit some dumb styling from global.css */
+#pst-form { all: none !important; }

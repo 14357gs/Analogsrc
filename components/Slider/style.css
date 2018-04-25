@@ -1,0 +1,60 @@
+.input-range {
+  margin-bottom: 160px;
+}
+.slider {
+    margin: 5px 20px 20px 20px;
+    height:100%;
+}
+
+.rc-slider-tooltip{
+    z-index: 999;
+}
+
+.rc-slider-vertical .rc-slider-handle {
+    margin-left: -18px;
+    background: #264054;
+    width: 40px;
+    padding: 6px 0;
+    height: 12px;
+    border: 0;
+    border-radius:4px;
+}
+.rc-slider-track {
+    background: #264054;
+}
+
+.slider-wrapper {
+    display: inline-block;
+    height: 98px; /* height is 110 - the height of one of the handle bars (12) */
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+
+.slider-wrapper > .slider { margin: 0; }
+
+.slider-wrapper > .slider .rc-slider-handle:before {
+    display: block;
+    height: 1px;
+    width: 60%;
+    border-bottom: 1px solid rgba( 255, 255, 255, .3 );
+    margin: auto;
+    content: ' ';
+}
+
+.slider-wrapper input {
+    width: 150px!important;
+    height: 20px;
+    margin: 0 50%;
+    transform-origin: 75px 75px;
+    transform: rotate(-90deg);
+}
+
+.sliderVals input{
+    width: 78%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.double-slider { color: #000; }
