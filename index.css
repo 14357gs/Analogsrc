@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll !important;
+}
+
+body.no-scroll { overflow: hidden !important; }
+
+body.ie11 { -ms-overflow-style: scrollbar; }
+
+body.ie11.thm-parametric .breadcrumb.adicrumb, 
+body.ie11.thm-parametric footer, 
+body.ie11.thm-parametric header, 
+body.ie11.thm-parametric header + .container {
+    position: relative !important;
+    width: 100vw;
+}
